@@ -8,10 +8,24 @@
             </div>
         </div>
         <div class="list card">
+
+        </div>
+        <div class="list card">
+            <ion-list>
+                <ion-item ng-repeat="user in users">
+                    <div class="item item-body">
+                        <img class="full-image" src="../img/{{user.image}}" />
+                        <p>bite{{user.desciption}}</p>
+                        <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="list card">
             <div class="item item-body">
                 <img class="full-image" src="../img/jean_kevin.jpg" />
                 <p>Ceci est un test</p>
-                <a href="#" class="subdued">50 <i class="icon ion-star"></i></a>
+                <a href="#" class="subdued">50 <i class="icon ion-star"></i></a
             </div>
             <div class="item item-body">
                 <img class="full-image" src="../img/jean_kevin.jpg" />

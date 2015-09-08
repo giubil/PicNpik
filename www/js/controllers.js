@@ -40,6 +40,18 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+                   //         <img class="full-image" src="{{user.image}}" />
+                   //     <p>{{user.desciption}}</p>
+                    //    <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
+
+.controller('AccountCtrl', function ($scope) {
+    $scope.users = [
+        { image: 'jean_kevin.jpg', description: '1je suce des queus', star_number: 25 },
+        { image: 'jean_kevin.jpg', description: '2je suce des queus', star_number: 26 },
+        { image: 'jean_kevin.jpg', description: '3je suce des queus', star_number: 27 },
+        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 }
+    ];
+})
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
@@ -49,9 +61,8 @@ angular.module('starter.controllers', [])
     { title: 'Indie', id: 4 },
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 },
-    { title: 'GROSSE BITE', id: 7 },
-    { title: 'steed', id: 8}
-];
+    { title: 'GROSSE BITE', id: 7}
+  ];
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

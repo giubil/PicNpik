@@ -64,6 +64,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
            views: {
                'menuContent': {
                    templateUrl: 'templates/my_account.html',
+                   controller: 'AccountCtrl'
                }
            }
        })
