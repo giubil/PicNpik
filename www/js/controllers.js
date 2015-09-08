@@ -49,8 +49,9 @@ angular.module('starter.controllers', [])
     { title: 'Indie', id: 4 },
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 },
-    { title: 'GROSSE BITE', id: 7}
-  ];
+    { title: 'GROSSE BITE', id: 7 },
+    { title: 'ARRABOA', id: 8}
+];
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
