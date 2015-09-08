@@ -15,28 +15,11 @@
                 <ion-item ng-repeat="user in users">
                     <div class="item item-body">
                         <img class="full-image" src="../img/{{user.image}}" />
-                        <p>bite{{user.desciption}}</p>
+                        <p>{{user.description}}</p>
                         <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
                     </div>
                 </ion-item>
             </ion-list>
-        </div>
-        <div class="list card">
-            <div class="item item-body">
-                <img class="full-image" src="../img/jean_kevin.jpg" />
-                <p>Ceci est un test</p>
-                <a href="#" class="subdued">50 <i class="icon ion-star"></i></a
-            </div>
-            <div class="item item-body">
-                <img class="full-image" src="../img/jean_kevin.jpg" />
-                <p>Ceci est un test</p>
-                <a href="#" class="subdued">45 <i class="icon ion-star"></i></a>
-            </div>
-            <div class="item item-body">
-                <img class="full-image" src="../img/jean_kevin.jpg" />
-                <p>Ceci est un test</p>
-                <a href="#" class="subdued">22 <i class="icon ion-star"></i></a>
-            </div>
         </div>
     </ion-content>
 </ion-view>
