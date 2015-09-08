@@ -50,7 +50,7 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 },
     { title: 'GROSSE BITE', id: 7 },
-    { title: 'ARRABOA', id: 8}
+    { title: 'steed', id: 8}
 ];
 })
 
