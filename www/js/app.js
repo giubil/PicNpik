@@ -35,7 +35,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
 
-    /*.state('leader.single', {
+    .state('leader.single', {
         url: '/leaderboard/:playlistId',
         views: {
             'menuContent': {
@@ -43,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 controller: 'UserCtrl'
             }
         }
-    })*/
+    })
 
     .state('leader.user', {
         url: '/user',

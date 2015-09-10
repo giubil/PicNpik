@@ -74,7 +74,7 @@ angular.module('starter.controllers', [])
 
 .controller('UserCtrl', function ($scope   ) {
     $scope.leaderboard = [
-        { image: 'jean_kevin.jpg', name: 'Jean-kevin', id: 1 },
+        { image: 'jean_kevin.jpg', name: 'Jean-caca', id: 1 },
         { image: 'jean_kevin.jpg', name: 'Jean-kevin', id: 2 },
         { image: 'jean_kevin.jpg', name: 'Jean-kevin', id: 3 }
     ];
