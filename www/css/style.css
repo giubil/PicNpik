@@ -5,7 +5,7 @@ div.box {
 }
 
 div.divleft {
-    background: #999;
+    background: #FFF;
     float: left;
     height: 100%;
     width: 50%;
@@ -13,7 +13,7 @@ div.divleft {
 }
 
 div.divright {
-    background: #666;
+    background: #FFF;
     height: 100%;
     text-align:center;
 }
