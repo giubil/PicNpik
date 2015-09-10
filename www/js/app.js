@@ -25,6 +25,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
+.state('leader', {
+    url: '/leader',
+    abstract: true,
+    templateUrl: 'templates/leaderMenu.html',
+    controller: 'UserCtrl'
+})
       .state('app', {
           url: '/app',
           abstract: true,
@@ -40,7 +46,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
-
+            .state('leader.single', {
+                url: '/leaderboard/:playlistId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/user.html',
+                        controller: 'UserCtrl'
+                    }
+                }
+            })
     .state('app.battle', {
         url: '/battle',
         views: {
