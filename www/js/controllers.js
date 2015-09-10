@@ -40,9 +40,6 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-                   //         <img class="full-image" src="{{user.image}}" />
-                   //     <p>{{user.desciption}}</p>
-                    //    <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
 
 .controller('AccountCtrl', function ($scope) {
     $scope.users = [
