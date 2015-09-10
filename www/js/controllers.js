@@ -41,6 +41,16 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('LeaderboardCtrl', function ($scope) {
+    $scope.leaderboard = [
+        { imagePic: 'catOnBoobs.jpg', descriptionPic: '1.Can on Boobies', star_numberPic: 500, imagePpl: 'redHeadSmilng.jpg', descriptionPpl: '1.Red Head', star_numberPpl: 850 },
+        { imagePic: 'pandaPlaying.jpg', descriptionPic: '2.Panda Driving', star_numberPic: 45, imagePpl: 'jean_kevin.jpg', descriptionPpl: '2.Jean Kevin', star_numberPpl: 790 },
+        { imagePic: 'englishMuffin.jpg', descriptionPic: '3.English Muffin', star_numberPic: 35, imagePpl: 'moritz.jpg', descriptionPpl: '3.Moritz', star_numberPpl: 785 },
+        { imagePic: 'sharkFlying.png', descriptionPic: '4.Shark Flying', star_numberPic: 30, imagePpl: 'uglyWoman.jpg', descriptionPpl: '4.Ugly Woman', star_numberPpl: 770 },
+        { imagePic: 'ionic.png', descriptionPic: '5.Ionic', star_numberPic: 20, imagePpl: 'blackGuy.jpg', descriptionPpl: '5.Black Guy', star_numberPpl: 755 }
+    ];
+})
+
 .controller('AccountCtrl', function ($scope) {
     $scope.users = [
         { image: 'jean_kevin.jpg', description: '1je suce des queus', star_number: 25 },
