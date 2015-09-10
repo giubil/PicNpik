@@ -14,3 +14,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.myScroll {
+    white-space: nowrap;
+}
+
+.scroll {
+    min-width: 100%;
+}

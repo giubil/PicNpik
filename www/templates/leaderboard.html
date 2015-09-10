@@ -6,55 +6,25 @@
             <div class="divleft">
                 <i class="ion-image iconLearderboard"></i>
                 <div class="box">
-                    <div class="list">
+                    <ion-item ng-repeat="leader in leaderboard">
                         <a class="item item-thumbnail-left" href="#">
-                            <img src="/img/catOnBoobs.jpg">
-                            <h2>1.Cat on Boobies</h2>
-                            <p>120pts</p>
+                            <img src="/img/{{leader.imagePic}}">
+                            <h2>{{leader.descriptionPic}}</h2>
+                            <p>{{leader.star_numberPic}}</p>
                         </a>
-                        <a class="item item-thumbnail-left" href="#">
-                            <img src="/img/sharkFlying.png">
-                            <h2>2.Rainbow shark</h2>
-                            <p>95pts</p>
-                        </a>
-                        <a class="item item-thumbnail-left" href="#">
-                            <img src="/img/englishMuffin.jpg">
-                            <h2>3.English Muffin</h2>
-                            <p>80pts</p>
-                        </a>
-                        <a class="item item-thumbnail-left" href="#">
-                            <img src="/img/pandaPlaying.jpg">
-                            <h2>4.Panda playing</h2>
-                            <p>75pts</p>
-                        </a>
-                    </div>
+                    </ion-item>
                 </div>
             </div>
             <div class="divright">
                 <i class="ion-person-stalker iconLearderboard"></i>
                 <div class="box">
-                    <div class="list">
+                    <ion-item ng-repeat="leader in leaderboard">
                         <a class="item item-avatar-leaderboard sizeLeaderboardList" href="#">
-                            <img src="/img/blackGuy.jpg">
-                            <h2>1.Black Guy</h2>
-                            <p>520pts</p>
+                            <img src="/img/{{leader.imagePpl}}">
+                            <h2>{{leader.descriptionPpl}}</h2>
+                            <p>{{leader.star_numberPpl}}</p>
                         </a>
-                        <a class="item item-avatar-leaderboard sizeLeaderboardList" href="#">
-                            <img src="/img/uglyWoman.jpg">
-                            <h2>2.Ugly Woman</h2>
-                            <p>500pts</p>
-                        </a>
-                        <a class="item item-avatar-leaderboard sizeLeaderboardList" href="#">
-                            <img src="/img/redHeadSmilng.jpg">
-                            <h2>3.Red head</h2>
-                            <p>495pts</p>
-                        </a>
-                        <a class="item item-avatar-leaderboard sizeLeaderboardList" href="#">
-                            <img src="/img/jean_kevin.jpg">
-                            <h2>4.Jean-Kevin du 67</h2>
-                            <p>480pts</p>
-                        </a>
-                    </div>
+                    </ion-item>
                 </div>
             </div>
             <div class="clear" />
