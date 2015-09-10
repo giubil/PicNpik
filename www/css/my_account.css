@@ -1,0 +1,11 @@
+﻿.photoList {
+    width : 50%;
+     height : 100%;
+    float : right;
+}
+
+.profileDetail {
+    width : 50%;
+     height : 100%;
+    float : left;
+}
