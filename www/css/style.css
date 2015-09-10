@@ -29,12 +29,12 @@
 .imagebtn {
     border: 0;
     background: transparent;
-    // la il faut rajouter le CSS pour que ce soit joli;
+    text-align:center;
 }
 
 div.box {
     background: #EEE;
-    height: 100px;
+    height: auto;
     width: auto;
 }
 
@@ -43,11 +43,13 @@ div.divleft {
     float: left;
     height: 100%;
     width: 50%;
+    text-align:center;
 }
 
 div.divright {
     background: #666;
     height: 100%;
+    text-align:center;
 }
 
 div.clear {
