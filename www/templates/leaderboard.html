@@ -6,11 +6,11 @@
             <div class="divleft">
                 <i class="ion-image iconLearderboard"></i>
                 <div class="box">
-                    <ion-item ng-repeat="leader in leaderboard">
+                    <ion-item ng-repeat="leader in leaderboardPic">
                         <a class="item item-thumbnail-left" href="#">
-                            <img src="/img/{{leader.imagePic}}">
-                            <h2>{{leader.descriptionPic}}</h2>
-                            <p>{{leader.star_numberPic}}</p>
+                            <img src="/img/{{leader.image}}">
+                            <h2>{{leader.description}}</h2>
+                            <p>{{leader.star_number}}</p>
                         </a>
                     </ion-item>
                 </div>
@@ -18,11 +18,11 @@
             <div class="divright">
                 <i class="ion-person-stalker iconLearderboard"></i>
                 <div class="box">
-                    <ion-item ng-repeat="leader in leaderboard">
+                    <ion-item ng-repeat="leader in leaderboardPpl">
                         <a class="item item-avatar-leaderboard sizeLeaderboardList" href="#">
-                            <img src="/img/{{leader.imagePpl}}">
-                            <h2>{{leader.descriptionPpl}}</h2>
-                            <p>{{leader.star_numberPpl}}</p>
+                            <img src="/img/{{leader.image}}">
+                            <h2>{{leader.description}}</h2>
+                            <p>{{leader.star_number}}</p>
                         </a>
                     </ion-item>
                 </div>
