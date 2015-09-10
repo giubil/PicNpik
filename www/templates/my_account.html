@@ -1,12 +1,9 @@
 ﻿<link href="../css/my_account.css" rel="stylesheet">
-<script>
-    function myFunction() {
-        alert("coucou");
-    }
-</script>
+
 <ion-view view-title="My account">
 
     <ion-content scroll="false">
+
         <div class="profileDetail">
             <img src="../img/jean_kevin.jpg" />
             <h2>Jean-kevin</h2>
@@ -20,7 +17,7 @@
             </div>
         </div>
 
-        <ion-content>
+        <ion-content>            
             <div class="photoList">
                 <ion-list>
                     <ion-item ng-repeat="user in users">
@@ -33,6 +30,5 @@
                 </ion-list>
             </div>
         </ion-content>
-
     </ion-content>
 </ion-view>
