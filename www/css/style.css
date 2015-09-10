@@ -26,7 +26,9 @@ div.clear {
     margin-top: -1px;
 }
 
-redback, .item, .item-complex .item-content {
+/*
+.item, .item-complex .item-content {
     background-color:#FF8A65;
     border-color:#FFF;
 }
+*/
