@@ -1,16 +1,27 @@
 ﻿<link href="../css/my_account.css" rel="stylesheet">
+<script>
+    function myFunction() {
+        alert("coucou");
+    }
+</script>
 <ion-view view-title="My account">
-        <ion-content>
-            <div class="profileDetail">
-                <img src="../img/jean_kevin.jpg" />
-                <h2>Jean-kevin</h2>
-                <p>Membre depuis 50 jours</p>
+
+    <ion-content scroll="false">
+        <div class="profileDetail">
+            <img src="../img/jean_kevin.jpg" />
+            <h2>Jean-kevin</h2>
+            <p>Membre depuis 50 jours</p>
+        </div>
+
+        <div class="sectionButton">
+            <div class="button-bar">
+                <a class="button" onclick="myFunction()">Créations</a>
+                <a class="button">Favoris</a>
             </div>
+        </div>
+
+        <ion-content>
             <div class="photoList">
-                <div class="button-bar">
-                    <a class="button">Créations</a>
-                    <a class="button">Favoris</a>
-                </div>
                 <ion-list>
                     <ion-item ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
@@ -22,4 +33,6 @@
                 </ion-list>
             </div>
         </ion-content>
+
+    </ion-content>
 </ion-view>

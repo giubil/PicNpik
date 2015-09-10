@@ -43,10 +43,16 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function ($scope) {
     $scope.users = [
-        { image: 'jean_kevin.jpg', description: '1je suce des queus', star_number: 25 },
+        { image: 'jean_kevin.jpg', description: '1', star_number: 25 },
         { image: 'jean_kevin.jpg', description: '2je suce des queus', star_number: 26 },
         { image: 'jean_kevin.jpg', description: '3je suce des queus', star_number: 27 },
-        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 }
+        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 },
+        { image: 'jean_kevin.jpg', description: '5je suce des queus', star_number: 29 },
+        { image: 'jean_kevin.jpg', description: '6je suce des queus', star_number: 30 },
+        { image: 'jean_kevin.jpg', description: '7je suce des queus', star_number: 31 },
+        { image: 'jean_kevin.jpg', description: '8je suce des queus', star_number: 32 },
+        { image: 'jean_kevin.jpg', description: '9je suce des queus', star_number: 33 },
+        { image: 'jean_kevin.jpg', description: '10je suce des queus', star_number: 34 }
     ];
 })
 
