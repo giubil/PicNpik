@@ -1,11 +1,16 @@
 ﻿.photoList {
-    width : 50%;
-     height : 100%;
-    float : right;
+    width: 70%;
+    height: 20%;
+    float: right;
 }
 
 .profileDetail {
-    width : 50%;
-     height : 100%;
-    float : left;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.kevinPhoto {
+    margin-left: auto;
+    margin-right: auto;
 }
