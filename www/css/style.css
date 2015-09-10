@@ -25,3 +25,8 @@ div.clear {
     font-size: 0pt;
     margin-top: -1px;
 }
+
+redback, .item, .item-complex .item-content {
+    background-color:#FF8A65;
+    border-color:#FFF;
+}
