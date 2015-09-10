@@ -25,6 +25,37 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
+    //leaderboard special menu
+
+    .state('leader', {
+        url: '/leader',
+        abstract: true,
+        templateUrl: 'templates/leaderMenu.html',
+        controller: 'UserCtrl'
+    })
+
+
+    .state('leader.single', {
+        url: '/leaderboard/:playlistId',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user.html',
+                controller: 'UserCtrl'
+            }
+        }
+    })
+
+    .state('leader.user', {
+        url: '/user',
+        //view: {
+//            'menuContent': {
+                templateUrl: 'templates/leader_user.html'
+  //          }
+        //}
+    })
+
+        //app in general
+
       .state('app', {
           url: '/app',
           abstract: true,
@@ -41,6 +72,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
+
+    /*.state('app.user', {
+        url: '/user',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/leader_user.html'
+    }
+        }
+    })*/
 
     .state('app.battle', {
         url: '/battle',
@@ -75,6 +115,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             templateUrl: 'templates/homepage.html'
         })
 
+        
+
     .state('app.single', {
         url: '/playlists/:playlistId',
         views: {
@@ -85,5 +127,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/homepage');
+    $urlRouterProvider.otherwise('/app/battle');
 });
