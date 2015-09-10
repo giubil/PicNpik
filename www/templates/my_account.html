@@ -1,22 +1,50 @@
-﻿<ion-view view-title="My account">
+﻿<link href="../css/my_account.css" rel="stylesheet">
+<ion-view view-title="My account">
     <ion-content>
-        <div class="list card">
-            <div class="item item-avatar">
-                <img src="../img/jean_kevin.jpg" />
-                <h2>Jean-kevin</h2>
-                <p>Membre depuis 50 jours</p>
-            </div>
+
+
+        <!-- carte de profil -->
+        <div class="profileDetail">
+            <img src="../img/jean_kevin.jpg" />
+            <h2>Jean-kevin</h2>
+            <p>Membre depuis 50 jours</>p
         </div>
-        <div class="list card">
-            <ion-list>
-                <ion-item ng-repeat="user in users">
-                    <div class="item item-body">
-                        <img class="item item-avatar" src="../img/{{user.image}}" />
-                        <p>{{user.description}}</p>
-                        <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
-                    </div>
-                </ion-item>
-            </ion-list>
+
+        <!-- liste d'images de l'utilisateur -->
+        <div class="photoList">
+            <a class="item item-thumbnail-left" href="#">
+                <img src="../img/jean_kevin.jpg">
+                <h2>Photo 1</h2>
+                <p>42 points</p>
+
+</a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="../img/jean_kevin.jpg">
+                <h2>Photo 2</h2>
+                <p>42 points</p>
+
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="../img/jean_kevin.jpg">
+                <h2>Photo 3</h2>
+                <p>42 points</p>
+
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="../img/jean_kevin.jpg">
+                <h2>Photo 4</h2>
+                <p>42 points</p>
+
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="../img/jean_kevin.jpg">
+                <h2>Photo 5</h2>
+                <p>42 points</p>
+
+            </a>
         </div>
+
+        
+
     </ion-content>
 </ion-view>
