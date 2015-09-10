@@ -23,6 +23,14 @@
     max-height: 80px;
 }
 
+.item{
+    padding:0px;
+}
+
+.paddingDelete{
+    padding:0px
+}
+
 .iconLearderboard{
     font-size:64px;
     color:#ffc107;

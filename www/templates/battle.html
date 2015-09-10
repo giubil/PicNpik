@@ -1,19 +1,37 @@
-<ion-view view-title="Browse">
-    <ion-content>
-        <h1 style="text-align:center;">Let's the battle begin !</h1>
+<link href="../css/battle.css" rel="stylesheet">
 
-        <div class="box">
-            <div class="divleft">
-                <button type="submit" class="imagebtn">
-                    <img src="/img/jean_kevin.jpg" />
-                </button>
+<ion-view view-title="Let's the battle begin !">
+    <ion-content scroll="false">
+        <h1 style="text-align:center" class="yellowback"></h1>
+
+        <div class="battlebox yellowback">
+            <div class="leftbox boxes">
+                <div class="imagebox">
+                    <button type="submit" class="imagebtn">
+                        <img class="bimage maximage" src="/img/jean_kevin.jpg" />
+                    </button>
+                </div>
+                <div class="nav-bar">
+                    <button class="battleOpt"><i class="icon ion-search"></i></button>
+                    <button class="battleOpt"><i class="icon ion-flag"></i></button>
+                    <button class="battleOpt"><i class="icon ion-star"></i></button>
+                </div>
             </div>
-            <div class="divright">
-                <button type="submit" class="imagebtn">
-                    <img src="/img/jean_kevin.jpg" />
-                </button>
+            <div class="middlebox boxes">
+                <img src="/img/versus.png" class="maximage"/>
             </div>
-            <div class="clear" />
+            <div class="rightbox boxes">
+                <div class="imagebox">
+                    <button type="submit" class="imagebtn">
+                        <img class="bimage maximage" src="/img/jean_kevin.jpg" />
+                    </button>
+                </div>
+                <div class="nav-bar">
+                    <button class="battleOpt"><i class="icon ion-search"></i></button>
+                    <button class="battleOpt"><i class="icon ion-flag"></i></button>
+                    <button class="battleOpt"><i class="icon ion-star"></i></button>
+                </div>
+            </div>
         </div>
     </ion-content>
 </ion-view>

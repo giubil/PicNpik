@@ -67,7 +67,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/leaderboard',
         views: {
             'menuContent': {
-                templateUrl: 'templates/leaderboard.html'
+                templateUrl: 'templates/leaderboard.html',
+                controller: 'LeaderboardCtrl',
             }
         }
     })
