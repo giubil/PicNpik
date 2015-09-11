@@ -12,15 +12,15 @@
 
         <div class="sectionButton">
             <div class="button-bar">
-                <p class="button" style="font-weight:bold; background-color:#FFECB3">Uploads</p>
-                <p class="button" style="font-weight:bold;"><i class="icon ion-star" style="padding-right: 10px; color:cornflowerblue;"></i>Favorites</p>
+                <p class="button" ng-click="creation()" style="font-weight:bold; background-color:#FFECB3">Uploads</p>
+                <p class="button" ng-click="favoris()" style="font-weight:bold;"><i class="icon ion-star" style="padding-right: 10px; color:cornflowerblue;"></i>Favorites</p>
             </div>
         </div>
 
         <ion-content>            
             <div class="photoList">
                 <ion-list>
-                    <ion-item ng-repeat="user in users">
+                    <ion-item id="yolo" ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
                             <img src="../img/{{user.image}}"/>
                             <h2>{{user.description}}</h2>

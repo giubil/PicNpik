@@ -67,6 +67,32 @@ angular.module('starter.controllers', [])
         { image: 'jean_kevin.jpg', description: '3je suce des queus', star_number: 27 },
         { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 }
     ];
+
+    $scope.creation = function () {
+        $scope.users[0].image = 'jean_kevin.jpg';
+        $scope.users[1].image = 'jean_kevin.jpg';
+        $scope.users[2].image = 'jean_kevin.jpg';
+        $scope.users[3].image = 'jean_kevin.jpg';
+        $scope.users[4].image = 'jean_kevin.jpg';
+        $scope.users[5].image = 'jean_kevin.jpg';
+        $scope.users[6].image = 'jean_kevin.jpg';
+        $scope.users[7].image = 'jean_kevin.jpg';
+        $scope.users[8].image = 'jean_kevin.jpg';
+        $scope.users[9].image = 'jean_kevin.jpg';
+    };
+
+    $scope.favoris = function () {
+        $scope.users[0].image = 'blackGuy.jpg';
+        $scope.users[1].image = 'blackGuy.jpg';
+        $scope.users[2].image = 'blackGuy.jpg';
+        $scope.users[3].image = 'blackGuy.jpg';
+        $scope.users[4].image = 'blackGuy.jpg';
+        $scope.users[5].image = 'blackGuy.jpg';
+        $scope.users[6].image = 'blackGuy.jpg';
+        $scope.users[7].image = 'blackGuy.jpg';
+        $scope.users[8].image = 'blackGuy.jpg';
+        $scope.users[9].image = 'blackGuy.jpg';
+    };
 })
 
 .controller('PlaylistsCtrl', function ($scope) {
