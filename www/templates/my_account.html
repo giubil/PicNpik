@@ -12,15 +12,15 @@
 
         <div class="sectionButton">
             <div class="button-bar">
-                <p class="button" onclick="myFunction()">Créations</p>
-                <p class="button">Favoris</p>
+                <p class="button" ng-click="creation()">Créations</p>
+                <p class="button" ng-click="favoris()">Favoris</p>
             </div>
         </div>
 
         <ion-content>            
             <div class="photoList">
                 <ion-list>
-                    <ion-item ng-repeat="user in users">
+                    <ion-item id="yolo" ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
                             <img src="../img/{{user.image}}" />
                             <h2>{{user.description}}</h2>
