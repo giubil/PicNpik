@@ -36,22 +36,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 
     .state('leader.single', {
-        url: '/leaderboard/:playlistId',
+        url: '/users/:playlistId',
         views: {
             'menuContent': {
                 templateUrl: 'templates/user.html',
-                controller: 'UserCtrl'
+                controller: 'LeaderCtrl'
             }
         }
     })
 
     .state('leader.user', {
         url: '/user',
-        //view: {
-//            'menuContent': {
-                templateUrl: 'templates/leader_user.html'
-  //          }
-        //}
+        templateUrl: 'templates/leader_user.html'
     })
 
         //app in general
@@ -129,3 +125,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/battle');
 });
+
+
