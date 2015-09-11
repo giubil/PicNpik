@@ -9,13 +9,13 @@ div.divleft {
     float: left;
     height: 100%;
     width: 50%;
-    text-align:center;
+    text-align: center;
 }
 
 div.divright {
     background: #FFF;
     height: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 div.clear {
@@ -26,9 +26,18 @@ div.clear {
     margin-top: -1px;
 }
 
-/*
-.item, .item-complex .item-content {
-    background-color:#FF8A65;
-    border-color:#FFF;
+.homecontainer {
+    display: flex;
+    justify-content: center;
 }
-*/
+
+.homebtn {
+}
+
+.settingscontainer {
+    display: flex;
+}
+
+.settingsbtn {
+    align-self:flex-end;
+}
