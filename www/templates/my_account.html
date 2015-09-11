@@ -12,8 +12,8 @@
 
         <div class="sectionButton">
             <div class="button-bar">
-                <p class="button" onclick="myFunction()">Créations</p>
-                <p class="button">Favoris</p>
+                <p class="button" style="font-weight:bold; background-color:#FFECB3">Uploads</p>
+                <p class="button" style="font-weight:bold;"><i class="icon ion-star" style="padding-right: 10px; color:cornflowerblue;"></i>Favorites</p>
             </div>
         </div>
 
@@ -22,7 +22,7 @@
                 <ion-list>
                     <ion-item ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
-                            <img src="../img/{{user.image}}" />
+                            <img src="../img/{{user.image}}"/>
                             <h2>{{user.description}}</h2>
                             <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
                         </div>
