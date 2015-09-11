@@ -6,7 +6,6 @@
 
 .sectionButton {
     width: 70%;
-    height: 20%;
     float: right;
     position: relative;
     z-index: 1;
@@ -14,7 +13,6 @@
 
 .photoList {
     width: 70%;
-    height: 10%;
     float: right;
-    padding-top: 10%;
+    padding-top: 47px;
 }

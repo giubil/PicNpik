@@ -41,7 +41,9 @@ angular.module('starter.controllers', [])
     };
 })
 
-.controller('LeaderboardCtrl', function ($scope) {
+.controller('LeaderboardCtrl', function ($scope, $stateParams, Playlists) {
+    $scope.user = Playlists.get($stateParams.playlistId);
+
     $scope.leaderboardPic = [
         { image: 'catOnBoobs.jpg', description: '1.Can on Boobies', star_number: 500 },
         { image: 'pandaPlaying.jpg', description: '2.Panda Driving', star_number: 45 },
@@ -60,16 +62,10 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function ($scope) {
     $scope.users = [
-        { image: 'jean_kevin.jpg', description: '1', star_number: 25 },
+        { image: 'jean_kevin.jpg', description: '1je suce des queus', star_number: 25 },
         { image: 'jean_kevin.jpg', description: '2je suce des queus', star_number: 26 },
         { image: 'jean_kevin.jpg', description: '3je suce des queus', star_number: 27 },
-        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 },
-        { image: 'jean_kevin.jpg', description: '5je suce des queus', star_number: 29 },
-        { image: 'jean_kevin.jpg', description: '6je suce des queus', star_number: 30 },
-        { image: 'jean_kevin.jpg', description: '7je suce des queus', star_number: 31 },
-        { image: 'jean_kevin.jpg', description: '8je suce des queus', star_number: 32 },
-        { image: 'jean_kevin.jpg', description: '9je suce des queus', star_number: 33 },
-        { image: 'jean_kevin.jpg', description: '10je suce des queus', star_number: 34 }
+        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 }
     ];
 
     $scope.creation = function () {
@@ -111,13 +107,32 @@ angular.module('starter.controllers', [])
     ];
 })
 
-.controller('UserCtrl', function ($scope   ) {
-    $scope.leaderboard = [
-        { image: 'jean_kevin.jpg', name: 'Jean-caca', id: 1 },
-        { image: 'jean_kevin.jpg', name: 'Jean-kevin', id: 2 },
-        { image: 'jean_kevin.jpg', name: 'Jean-kevin', id: 3 }
-    ];
-})
+ .controller('UserCtrl', function ($scope, Playlists) {
+     $scope.leaderboard = Playlists.all();
+ })
 
-.controller('PlaylistCtrl', function ($scope, $stateParams) {
-});
+
+
+  .controller('LeaderCtrl', function ($scope, $stateParams, Playlists) {
+      $scope.user = Playlists.get($stateParams.playlistId);
+  })
+
+
+  .factory('Playlists', function () {
+      var playlists = [
+        { name: 'Geek', id: 0 },
+        { name: 'Cute', id: 1 },
+        { name: 'Animals', id: 2 }
+      ];
+
+
+      return {
+          all: function () {
+              return playlists;
+          },
+          get: function (playlistId) {
+              // Simple index lookup
+              return playlists[playlistId];
+          }
+      }
+  });
