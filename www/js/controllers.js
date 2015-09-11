@@ -62,36 +62,57 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function ($scope) {
     $scope.users = [
-        { image: 'jean_kevin.jpg', description: '1je suce des queus', star_number: 25 },
-        { image: 'jean_kevin.jpg', description: '2je suce des queus', star_number: 26 },
-        { image: 'jean_kevin.jpg', description: '3je suce des queus', star_number: 27 },
-        { image: 'jean_kevin.jpg', description: '4je suce des queus', star_number: 28 }
+        { image: 'blackGuy.jpg', description: 'Funny dude', star_number: 50 },
+        { image: 'jean_kevin.jpg', description: 'COD4EVAH', star_number: 46 },
+        { image: 'uglyWoman.jpg', description: 'Hello', star_number: 27 },
+        { image: 'redHeadSmilng.jpg', description: '...', star_number: 12 }
     ];
 
     $scope.creation = function () {
-        $scope.users[0].image = 'jean_kevin.jpg';
+        var but = document.getElementById("creation");
+        var but2 = document.getElementById("favoris");
+        but2.style.backgroundColor = "#f8f8f8";
+        but.style.backgroundColor = "#FFECB3";
+
+
+        $scope.users[0].image = 'blackGuy.jpg';
         $scope.users[1].image = 'jean_kevin.jpg';
-        $scope.users[2].image = 'jean_kevin.jpg';
-        $scope.users[3].image = 'jean_kevin.jpg';
-        $scope.users[4].image = 'jean_kevin.jpg';
-        $scope.users[5].image = 'jean_kevin.jpg';
-        $scope.users[6].image = 'jean_kevin.jpg';
-        $scope.users[7].image = 'jean_kevin.jpg';
-        $scope.users[8].image = 'jean_kevin.jpg';
-        $scope.users[9].image = 'jean_kevin.jpg';
+        $scope.users[2].image = 'uglyWoman.jpg';
+        $scope.users[3].image = 'redHeadSmilng.jpg';
+
+        $scope.users[0].description = 'Funny dude';
+        $scope.users[1].description = 'COD4EVAH';
+        $scope.users[2].description = 'Hello';
+        $scope.users[3].description = '...';
+
+        $scope.users[0].star_number = 50;
+        $scope.users[1].star_number = 46;
+        $scope.users[2].star_number = 27;
+        $scope.users[3].star_number = 12;
+
     };
 
     $scope.favoris = function () {
-        $scope.users[0].image = 'blackGuy.jpg';
-        $scope.users[1].image = 'blackGuy.jpg';
-        $scope.users[2].image = 'blackGuy.jpg';
-        $scope.users[3].image = 'blackGuy.jpg';
-        $scope.users[4].image = 'blackGuy.jpg';
-        $scope.users[5].image = 'blackGuy.jpg';
-        $scope.users[6].image = 'blackGuy.jpg';
-        $scope.users[7].image = 'blackGuy.jpg';
-        $scope.users[8].image = 'blackGuy.jpg';
-        $scope.users[9].image = 'blackGuy.jpg';
+        var but = document.getElementById("creation");
+        var but2 = document.getElementById("favoris");
+        but.style.backgroundColor = "#f8f8f8";
+        but2.style.backgroundColor = "#FFECB3";
+
+
+        $scope.users[0].image = 'img1.jpg';
+        $scope.users[1].image = 'img2.jpg';
+        $scope.users[2].image = 'img3.jpg';
+        $scope.users[3].image = 'img4.jpg';
+
+        $scope.users[0].description = 'best flash cosplayer';
+        $scope.users[1].description = 'funny monkey';
+        $scope.users[2].description = 'fail tatoo';
+        $scope.users[3].description = 'awesome dog';
+
+        $scope.users[0].star_number = 10;
+        $scope.users[1].star_number = 7;
+        $scope.users[2].star_number = 4;
+        $scope.users[3].star_number = 2;
     };
 })
 
