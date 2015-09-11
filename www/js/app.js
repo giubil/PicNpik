@@ -39,8 +39,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/users/:playlistId',
         views: {
             'menuContent': {
-                templateUrl: 'templates/user.html',
-                controller: 'LeaderCtrl'
+                templateUrl: 'templates/leaderboard.html',
+                controller: 'LeaderboardCtrl'
             }
         }
     })

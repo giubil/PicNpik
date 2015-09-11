@@ -17,10 +17,7 @@
         <ion-content>
             <ion-list>
                 <ion-item ng-repeat="user in leaderboard" menu-close href="#/leader/users/{{user.id}}">
-                    <div class="item item-avatar">
-                        <img src="/img/{{user.image}}" />
-                        <h2>{{user.name}}</h2>
-                    </div>
+                    <h2>{{user.name}}</h2>
                 </ion-item>
             </ion-list>
         </ion-content>
