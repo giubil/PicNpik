@@ -132,7 +132,12 @@ angular.module('starter.controllers', [])
      $scope.leaderboard = Playlists.all();
  })
 
-
+ .controller('BattleCtrl', function ($scope) {
+     $scope.onimgclick = function () {
+         console.log("yes");
+         alert('yolo');
+     };
+ })
 
   .controller('LeaderCtrl', function ($scope, $stateParams, Playlists) {
       $scope.user = Playlists.get($stateParams.playlistId);

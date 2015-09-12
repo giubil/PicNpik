@@ -84,7 +84,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             'menuContent': {
                 templateUrl: 'templates/battle.html'
             }
-        }
+        },
+        controller: 'BattleCtrl'
     })
       .state('app.playlists', {
           url: '/playlists',
