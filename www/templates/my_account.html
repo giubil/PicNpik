@@ -22,9 +22,9 @@
                 <ion-list>
                     <ion-item id="yolo" ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
-                            <img src="../img/{{user.image}}"/>
+                            <img id="showImg" ng-src="../img/{{user.image}}" ng-click="showImg('../img/{{user.image}}')"/>
                             <h2>{{user.description}}</h2>
-                            <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
+                            <p class="subdued">{{user.star_number}} <i class="icon ion-star"></i></p>
                         </div>
                     </ion-item>
                 </ion-list>

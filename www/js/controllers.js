@@ -117,6 +117,9 @@ angular.module('starter.controllers', [])
         $scope.users[2].star_number = 4;
         $scope.users[3].star_number = 2;
     };
+
+    $scope.showImg = function (img) { 
+    };
 })
 
 .controller('PlaylistsCtrl', function ($scope) {
