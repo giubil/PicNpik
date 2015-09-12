@@ -118,8 +118,8 @@ angular.module('starter.controllers', [])
         $scope.users[3].star_number = 2;
     };
 
-    $scope.showImg = function (img) 
-        //window.open(img, '_self');
+    $scope.showImg = function (img) { 
+        window.open(img, '_self');
     };
 })
 
