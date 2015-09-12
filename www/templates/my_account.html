@@ -5,7 +5,7 @@
     <ion-content scroll="false">
 
         <div style="padding-left: 1%; padding-top: 1%;" class="profileDetail">
-            <img src="../img/blackGuy.jpg" />
+            <img src="img/blackGuy.jpg" />
             <h2>Jason</h2>
             <p>Member since 50 days</p>
         </div>
@@ -22,7 +22,11 @@
                 <ion-list>
                     <ion-item id="yolo" ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
+<<<<<<< Updated upstream
                             <img id="showImg" ng-src="../img/{{user.image}}" ng-click="showImg('../img/{{user.image}}')"/>
+=======
+                            <img src="img/{{user.image}}"/>
+>>>>>>> Stashed changes
                             <h2>{{user.description}}</h2>
                             <p class="subdued">{{user.star_number}} <i class="icon ion-star"></i></p>
                         </div>
