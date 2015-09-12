@@ -136,9 +136,28 @@ angular.module('starter.controllers', [])
  })
 
  .controller('BattleCtrl', function ($scope) {
+
+     var vari = 0;
+     var leftimg = document.getElementById("leftimg");
+     var rightimg = document.getElementById("rightimg");
+
      $scope.onimgclick = function () {
-         console.log("yes");
-         alert('yolo');
+         vari++;
+         if (vari % 3 == 0)
+         {
+             leftimg.src = "img/img2.jpg";
+             rightimg.src = "img/img4.jpg";
+         }
+         else if (vari % 3 == 1)
+         {
+             leftimg.src = "img/img1.jpg";
+             rightimg.src = "img/img3.jpg";
+         }
+         else
+         {
+             leftimg.src = "img/catOnBoobs.jpg";
+             rightimg.src = "img/pandaPlaying.jpg";
+         }
      };
  })
 
