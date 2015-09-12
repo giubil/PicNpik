@@ -1,10 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<link href="../css/my_account.css" rel="stylesheet">
 
-</body>
-</html>
+<ion-view view-title="User">
+    <ion-content>
+        <div class="photoList">
+            <ion-list>
+                <ion-item>
+                    <div class="item item-thumbnail-left" style="border:0px">
+                        <img src="img/{{user.image}}" />
+                        <h2>{{user.name}}</h2>
+                        <p>{{$playlistId}}</p>
+                        <p><script>echo (window.location.href);</script></p>
+                        <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

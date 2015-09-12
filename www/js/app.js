@@ -36,22 +36,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 
     .state('leader.single', {
-        url: '/leaderboard/:playlistId',
+        url: '/users/:playlistId',
         views: {
             'menuContent': {
-                templateUrl: 'templates/user.html',
-                controller: 'UserCtrl'
+                templateUrl: 'templates/leaderboard.html',
+                controller: 'LeaderboardCtrl'
             }
         }
     })
 
     .state('leader.user', {
         url: '/user',
-        //view: {
-//            'menuContent': {
-                templateUrl: 'templates/leader_user.html'
-  //          }
-        //}
+        templateUrl: 'templates/leader_user.html'
     })
 
         //app in general
@@ -73,20 +69,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
-    /*.state('app.user', {
-        url: '/user',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/leader_user.html'
-    }
-        }
-    })*/
-
     .state('app.battle', {
         url: '/battle',
         views: {
             'menuContent': {
-                templateUrl: 'templates/battle.html'
+                templateUrl: 'templates/battle.html',
+                controller: 'BattleCtrl'
             }
         }
     })
@@ -129,3 +117,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/battle');
 });
+
+
