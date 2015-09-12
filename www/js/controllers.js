@@ -172,21 +172,21 @@ angular.module('starter.controllers', [])
   .factory('LeaderLists', function () {
       var listsPics = [
           [
-            { image: 'Geek/Geek1.jpg', description: '1.Cat on Boobies', star_number: 500 },
-            { image: 'Geek/Geek2.jpg', description: '2.Panda Driving', star_number: 45 },
-            { image: 'Geek/Geek3.jpg', description: '3.English Muffin', star_number: 35 },
-            { image: 'Geek/Geek4.jpg', description: '4.Shark Flying', star_number: 30 },
-            { image: 'Geek/Geek5.jpg', description: '5.Ionic', star_number: 20 }],
-            [{ image: 'Animals/animal1.jpg', description: '1.Ionic', star_number: 432 },
-            { image: 'Animals/animal2.jpg', description: '2.Shark Flying', star_number: 321 },
-            { image: 'Animals/animal3.jpg', description: '3.English Muffin', star_number: 20 },
-            { image: 'Animals/animal4.jpg', description: '4.Panda Driving', star_number: 18 },
-            { image: 'Animals/animal5.jpg', description: '5.Cat on Boobies', star_number: 2 }],
-            [{ image: 'Meme/meme1.jpg', description: '1.English Muffin', star_number: 875 },
-            { image: 'Meme/meme2.jpg', description: '2.Cat on Boobies', star_number: 459 },
-            { image: 'Meme/meme3.jpg', description: '3.Shark Flying', star_number: 154 },
-            { image: 'Meme/meme4.jpg', description: '4.Panda Driving', star_number: 64 },
-            { image: 'Meme/meme5.jpg', description: '5.Ionic', star_number: 10 }]];
+            { image: 'Geek/Geek1.jpg', description: '1.Portal', star_number: 500 },
+            { image: 'Geek/Geek2.jpg', description: '2.The Tardis', star_number: 45 },
+            { image: 'Geek/Geek3.jpg', description: '3.Pokemon', star_number: 35 },
+            { image: 'Geek/Geek4.jpg', description: '4.Atari', star_number: 30 },
+            { image: 'Geek/Geek5.jpg', description: '5.Dark MLP', star_number: 20 }],
+            [{ image: 'Animals/animal1.jpg', description: '1.Elephant', star_number: 432 },
+            { image: 'Animals/animal2.jpg', description: '2.Sexy dog', star_number: 321 },
+            { image: 'Animals/animal3.jpg', description: '3.Hamster', star_number: 20 },
+            { image: 'Animals/animal4.jpg', description: '4.Cat', star_number: 18 },
+            { image: 'Animals/animal5.jpg', description: '5.Stupidness', star_number: 2 }],
+            [{ image: 'Meme/meme1.jpg', description: '1.Facepalm', star_number: 875 },
+            { image: 'Meme/meme2.jpg', description: '2.Philosophical raptor', star_number: 459 },
+            { image: 'Meme/meme3.jpg', description: '3.Groot', star_number: 154 },
+            { image: 'Meme/meme4.jpg', description: '4.Masterrace', star_number: 64 },
+            { image: 'Meme/meme5.jpg', description: '5.SUATMM', star_number: 10 }]];
       var listsUser = [
             [{ image: 'blackGuy.jpg', description: '1.Black Guy', star_number: 874 },
             { image: 'uglyWoman.jpg', description: '2.Ugly Woman', star_number: 754 },
