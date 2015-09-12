@@ -172,37 +172,37 @@ angular.module('starter.controllers', [])
   .factory('LeaderLists', function () {
       var listsPics = [
           [
-            { image: 'catOnBoobs.jpg', description: '1.Cat on Boobies', star_number: 500 },
-            { image: 'pandaPlaying.jpg', description: '2.Panda Driving', star_number: 45 },
-            { image: 'englishMuffin.jpg', description: '3.English Muffin', star_number: 35 },
-            { image: 'sharkFlying.png', description: '4.Shark Flying', star_number: 30 },
-            { image: 'ionic.png', description: '5.Ionic', star_number: 20 }],
-            [{ image: 'ionic.png', description: '1.Ionic', star_number: 20 },
-            { image: 'sharkFlying.png', description: '2.Shark Flying', star_number: 30 },
-            { image: 'englishMuffin.jpg', description: '3.English Muffin', star_number: 35 },
-            { image: 'pandaPlaying.jpg', description: '4.Panda Driving', star_number: 45 },
-            { image: 'catOnBoobs.jpg', description: '5.Cat on Boobies', star_number: 500 }],
-            [{ image: 'englishMuffin.jpg', description: '1.English Muffin', star_number: 35 },
-            { image: 'catOnBoobs.jpg', description: '2.Cat on Boobies', star_number: 500 },
-            { image: 'sharkFlying.png', description: '3.Shark Flying', star_number: 30 },
-            { image: 'pandaPlaying.jpg', description: '4.Panda Driving', star_number: 45 },
-            { image: 'ionic.png', description: '5.Ionic', star_number: 20 }]];
+            { image: 'Geek/Geek1.jpg', description: '1.Cat on Boobies', star_number: 500 },
+            { image: 'Geek/Geek2.jpg', description: '2.Panda Driving', star_number: 45 },
+            { image: 'Geek/Geek3.jpg', description: '3.English Muffin', star_number: 35 },
+            { image: 'Geek/Geek4.jpg', description: '4.Shark Flying', star_number: 30 },
+            { image: 'Geek/Geek5.jpg', description: '5.Ionic', star_number: 20 }],
+            [{ image: 'Animals/animal1.jpg', description: '1.Ionic', star_number: 432 },
+            { image: 'Animals/animal2.jpg', description: '2.Shark Flying', star_number: 321 },
+            { image: 'Animals/animal3.jpg', description: '3.English Muffin', star_number: 20 },
+            { image: 'Animals/animal4.jpg', description: '4.Panda Driving', star_number: 18 },
+            { image: 'Animals/animal5.jpg', description: '5.Cat on Boobies', star_number: 2 }],
+            [{ image: 'Meme/meme1.jpg', description: '1.English Muffin', star_number: 875 },
+            { image: 'Meme/meme2.jpg', description: '2.Cat on Boobies', star_number: 459 },
+            { image: 'Meme/meme3.jpg', description: '3.Shark Flying', star_number: 154 },
+            { image: 'Meme/meme4.jpg', description: '4.Panda Driving', star_number: 64 },
+            { image: 'Meme/meme5.jpg', description: '5.Ionic', star_number: 10 }]];
       var listsUser = [
-            [{ image: 'blackGuy.jpg', description: '1.Black Guy', star_number: 755 },
-            { image: 'uglyWoman.jpg', description: '2.Ugly Woman', star_number: 770 },
-            { image: 'moritz.jpg', description: '3.Moritz', star_number: 785 },
-            { image: 'jean_kevin.jpg', description: '4.Jean Kevin', star_number: 790 },
-            { image: 'redHeadSmilng.jpg', description: '5.Red Head', star_number: 850 }],
+            [{ image: 'blackGuy.jpg', description: '1.Black Guy', star_number: 874 },
+            { image: 'uglyWoman.jpg', description: '2.Ugly Woman', star_number: 754 },
+            { image: 'moritz.jpg', description: '3.Moritz', star_number: 342 },
+            { image: 'jean_kevin.jpg', description: '4.Jean Kevin', star_number: 25 },
+            { image: 'redHeadSmilng.jpg', description: '5.Red Head', star_number: 3 }],
             [{ image: 'redHeadSmilng.jpg', description: '1.Red Head', star_number: 850 },
             { image: 'jean_kevin.jpg', description: '2.Jean Kevin', star_number: 790 },
             { image: 'moritz.jpg', description: '3.Moritz', star_number: 785 },
             { image: 'uglyWoman.jpg', description: '4.Ugly Woman', star_number: 770 },
             { image: 'blackGuy.jpg', description: '5.Black Guy', star_number: 755 }],
-            [{ image: 'uglyWoman.jpg', description: '1.Ugly Woman', star_number: 770 },
-            { image: 'redHeadSmilng.jpg', description: '2.Red Head', star_number: 850 },
-            { image: 'jean_kevin.jpg', description: '3.Jean Kevin', star_number: 790 },
-            { image: 'blackGuy.jpg', description: '4.Black Guy', star_number: 755 },
-            { image: 'moritz.jpg', description: '5.Moritz', star_number: 785 }]];
+            [{ image: 'uglyWoman.jpg', description: '1.Ugly Woman', star_number: 1254 },
+            { image: 'redHeadSmilng.jpg', description: '2.Red Head', star_number: 741 },
+            { image: 'jean_kevin.jpg', description: '3.Jean Kevin', star_number: 630 },
+            { image: 'blackGuy.jpg', description: '4.Black Guy', star_number: 120 },
+            { image: 'moritz.jpg', description: '5.Moritz', star_number: 10 }]];
 
       return {
           all: function () {
@@ -221,7 +221,7 @@ angular.module('starter.controllers', [])
       var playlists = [
         { name: 'Geek', id: 0 },
         { name: 'Cute', id: 1 },
-        { name: 'Animals', id: 2 }
+        { name: 'Memes', id: 2 }
       ];
 
       return {

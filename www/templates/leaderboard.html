@@ -1,33 +1,5 @@
 <link href="../css/leaderboard.css" rel="stylesheet">
 
-<<<<<<< HEAD
-<ion-view view-title="Leaderboard">
-    <ion-content scroll="false">
-
-        <div class="divleft">
-            <i class="ion-image iconLearderboard"></i>
-            <ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
-                <ion-item ng-repeat="leader in leaderboardPic">
-                    <div class="item item-thumbnail-left">
-                        <img src="/img/{{leader.image}}">
-                        <h2>{{leader.description}}</h2>
-                        <p>{{leader.star_number}}</p>
-                    </div>
-                </ion-item>
-            </ion-scroll>
-        </div>
-        <div class="divright">
-            <i class="ion-person-stalker iconLearderboard"></i>
-            <ion-list scroll='true'>
-                <ion-item ng-repeat="leader in leaderboardPpl">
-                    <div class="item item-avatar-leaderboard sizeLeaderboardList">
-                        <img src="/img/{{leader.image}}">
-                        <h2>{{leader.description}}</h2>
-                        <p>{{leader.star_number}}</p>
-                    </div>
-                </ion-item>
-            </ion-list>
-=======
 <ion-view view-title="{{user.name}}">
     <ion-content>
         <div class="box">
@@ -56,7 +28,6 @@
                 </div>
             </div>
             <div class="clear" />
->>>>>>> 30cc3a71351bc38c82c63b433383714467d4a1a7
         </div>
         <div class="clear" />
 
