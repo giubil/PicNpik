@@ -119,7 +119,6 @@ angular.module('starter.controllers', [])
     };
 
     $scope.showImg = function (img) { 
-        window.open(img, '_self');
     };
 })
 
