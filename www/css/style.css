@@ -26,28 +26,28 @@ div.clear {
     margin-top: -1px;
 }
 
-.homecontainer {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height:50%;
-    width:100%;
-//    flex-wrap:wrap;
-}
+/* ----------------- */
+/* homepage.html css */
+/* ----------------- */
 
-.icon, .homebtn {
+.homebtn {
     font-size:100px;
-    margin:40px;
+    margin-top:110px;
+    margin-left:60px;
+    margin-right:20px;
     font-weight: normal;
     padding:0;
 }
 
-settcontainer{
+.homecontainer {
     display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    width:100%;
 }
 
-.settingsbtn {
-    font-size:30px;
-    align-self:flex-end;
-    float:right;
+.menuback{
+    background-image:url(/img/homepage.png);
+    height:100%;
 }
