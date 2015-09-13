@@ -29,15 +29,25 @@ div.clear {
 .homecontainer {
     display: flex;
     justify-content: center;
+    align-items:center;
+    height:50%;
+    width:100%;
+//    flex-wrap:wrap;
 }
 
-.homebtn {
+.icon, .homebtn {
+    font-size:100px;
+    margin:40px;
+    font-weight: normal;
+    padding:0;
 }
 
-.settingscontainer {
+settcontainer{
     display: flex;
 }
 
 .settingsbtn {
+    font-size:30px;
     align-self:flex-end;
+    float:right;
 }

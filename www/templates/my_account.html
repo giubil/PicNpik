@@ -4,27 +4,30 @@
 
     <ion-content scroll="false">
 
-        <div class="profileDetail">
-            <img src="../img/jean_kevin.jpg" />
-            <h2>Jean-kevin</h2>
-            <p>Membre depuis 50 jours</p>
+        <div style="padding-left: 5%; padding-top: 10%;" class="profileDetail">
+            <img style="border-radius: 100%;" src="img/blackGuy.jpg" />
+            <h2>Jason</h2>
+            <p>Member since 50 days</p>
+            <p>Uploaded 34 photos</p>
+            <p>Rank : 132th with 3201 points</p>
+            <p>Best score : 342 points</p>
         </div>
 
         <div class="sectionButton">
             <div class="button-bar">
-                <p class="button" onclick="myFunction()">Créations</p>
-                <p class="button">Favoris</p>
+                <p id="creation" class="button" ng-click="creation()" style="font-weight:bold; background-color:#FFECB3"><i class="icon ion-android-image" style="padding-right: 10px; color:cornflowerblue;"></i>Uploads</p>
+                <p id="favoris" class="button" ng-click="favoris()" style="font-weight:bold;"><i class="icon ion-star" style="padding-right: 10px; color:cornflowerblue;"></i>Favorites</p>
             </div>
         </div>
 
         <ion-content>            
             <div class="photoList">
                 <ion-list>
-                    <ion-item ng-repeat="user in users">
+                    <ion-item id="yolo" ng-repeat="user in users">
                         <div class="item item-thumbnail-left" style="border:0px">
-                            <img src="../img/{{user.image}}" />
-                            <h2>{{user.description}}</h2>
-                            <a href="#" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></a>
+                            <img src="img/{{user.image}}"/>
+                            <h1 style="padding-left: 20%;">{{user.description}}</h1style="padding-left:>
+                            <h2 style="padding-left: 20%;" class="subdued">{{user.star_number}} <i class="icon ion-star"></i></h2>
                         </div>
                     </ion-item>
                 </ion-list>
