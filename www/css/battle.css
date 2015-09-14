@@ -97,13 +97,13 @@ i {
 }
 
 .maximage{
-    max-width:200px;
-    max-height:200px;
+    max-width:300px;
+    max-height:300px;
     border-radius:10%;
 }
 
 .icon, .homebtn {
-    font-size:30px;
+    font-size:40px;
     margin:0px;
     font-weight: normal;
     padding:0;
